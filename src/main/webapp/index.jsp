@@ -11,6 +11,6 @@
     <title>THello world</title>
 </head>
 <body>
-<H3>Hello world</H3>
+<H3><% out.print("Hello world aaa"); %></H3>
 </body>
 </html>

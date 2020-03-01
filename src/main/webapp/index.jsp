@@ -3,7 +3,7 @@
 
 <html>
 <head>
-    <title>THello world</title>
+    <title>Hello world</title>
 </head>
 <body>
 
@@ -18,6 +18,8 @@
     </label>
     <input type="submit" value="Wyślij"></label>
 </form>
+
+<a href="search.jsp?query=blablabla&page=25&sort=asc">link</a>
 
 </body>
 </html>

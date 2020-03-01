@@ -1,4 +1,3 @@
-
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>
@@ -7,19 +6,15 @@
 </head>
 <body>
 
-<form action="search.jsp">
-    <label>Szukane słowo: <input type="text" name="query"/> </label>
-    <label>Strona nr: <input type="text" name="page"/> </label>
-    <label>Sortowanie:
-    <select name="sort">
-        <option value="asc">rosnąco</option>
-        <option value="desc"> malejąco</option>
-    </select>
-    </label>
-    <input type="submit" value="Wyślij"></label>
-</form>
+<%
 
-<a href="search.jsp?query=blablabla&page=25&sort=asc">link</a>
+    Cookie cookie = new Cookie("searchId", String.valueOf(12345));
+    cookie.setMaxAge(60 * 60 * 24);
+    response.addCookie(cookie);
+
+%>
+
+<a href="search.jsp">Search</a>
 
 </body>
 </html>
